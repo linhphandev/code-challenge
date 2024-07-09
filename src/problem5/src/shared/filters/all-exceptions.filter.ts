@@ -48,7 +48,7 @@ export class AllExceptionsFilter<T> implements ExceptionFilter {
         statusCode: HttpStatus.INTERNAL_SERVER_ERROR,
       })
     }
-    console.error(caughtException.stack)
+    console.error(caughtException)
 
     if (caughtException.errors) {
       caughtException.errors = caughtException.errors.map((error) => {

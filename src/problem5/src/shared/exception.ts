@@ -127,6 +127,20 @@ export class NotFoundException extends Exception {
   }
 }
 
+export class BadRequestException extends Exception {
+  constructor(message?: string) {
+    super({
+      statusCode: HttpStatus.BAD_REQUEST,
+      errors: [
+        {
+          code: ErrorCode.BAD_REQUEST,
+          message,
+        },
+      ],
+    })
+  }
+}
+
 export class UnauthorizedException extends Exception {
   constructor(message?: string) {
     super({

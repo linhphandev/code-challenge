@@ -1,8 +1,8 @@
 import * as _ from 'lodash'
 
-import { BadRequestException, Injectable } from '@nestjs/common'
+import { Injectable } from '@nestjs/common'
 
-import { NotFoundException } from '../shared/exception'
+import { NotFoundException, BadRequestException } from '../shared/exception'
 import { CreateResourceDto } from './dto/create-resource.dto'
 import { GetResourceDetailDto } from './dto/get-resource-detail.dto'
 import { ListResourceDto, ListResourceItemDto } from './dto/list-resource-item.dto'
