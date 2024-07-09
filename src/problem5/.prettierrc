@@ -1,0 +1,19 @@
+{
+  "semi": false,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "printWidth": 140,
+  "tabWidth": 2,
+  "arrowParens": "always",
+  "importOrder": [
+    "^(?!libs)\\w",
+    "^@(.*)",
+    "^libs/(.*)",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderParserPlugins": [
+    "typescript",
+    "decorators-legacy"
+  ]
+}
