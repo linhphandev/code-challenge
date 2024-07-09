@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { MongooseModule } from '@nestjs/mongoose'
 
+import { ResourceModule } from './resource/resource.module'
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -25,6 +27,7 @@ import { MongooseModule } from '@nestjs/mongoose'
       }),
       inject: [],
     }),
+    ResourceModule,
   ],
   providers: [],
 })
