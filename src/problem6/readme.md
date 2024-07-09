@@ -32,7 +32,7 @@
 
     - Response body:
 
-      ```css
+      ```
       [
           {
               "id": "d93ab302-743a-4097-8889-520922274d5b",
@@ -47,7 +47,7 @@
       ]
       ```
 
-    ```css
+    ```
     curl --location 'http://localhost:3000/v1/scores?limit=10'
     ```
 
@@ -58,7 +58,7 @@
     - Request body:
     - Response body:
 
-      ```css
+      ```
       {
           "id": "d93ab302-743a-4097-8889-520922274d5b",
           "name": "test_a",
@@ -66,7 +66,7 @@
       }
       ```
 
-    ```css
+    ```
     curl --location 'http://localhost:3000/v1/scores \
     --header 'Content-Type: application/json' \
     --data '{
@@ -87,21 +87,22 @@
     - Method: `POST`
     - Request body:
 
-      ```css
-       {
-        "username":string,"password": string;
+      ```
+      {
+        "username": string,
+        "password": string
       }
       ```
 
     - Response body:
 
-      ```css
-       {
-        "accessToken":string ;
+      ```
+      {
+        "accessToken": string
       }
       ```
 
-    ```css
+    ```
     curl --location 'http://localhost:3000/v1/auth/login' \
     --header 'Content-Type: application/json' \
     --data '{
@@ -116,16 +117,16 @@
     - Method: `POST`
     - Request body:
 
-      ```css
-       {
-        "token":string ;
+      ```
+      {
+        "token": string
       }
       ```
 
     - Response body:
 
-      ```css
-       {
-        "valid":true/false ;
+      ```
+      {
+        "valid": true/false
       }
       ```
